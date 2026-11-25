@@ -1,0 +1,4 @@
+import {site} from '@/lib/site';
+import {ArrowRight} from 'lucide-react';
+import {Button} from '@/components/ui/button';
+export function CtaBand(){return <section className="bg-navy hero-glow"><div className="container py-16 md:py-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-7"><div><p className="text-xs font-bold uppercase tracking-[.18em] text-[#83dce4] mb-3">Take the next step</p><h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Ready to explore online tutoring?</h2><p className="mt-3 max-w-xl text-white/70 leading-7">Tell us what you need. We’ll discuss suitable tutor options based on availability.</p></div><Button asChild variant="white" size="lg"><a href={site.parentFormUrl} target="_blank" rel="noopener noreferrer">Submit Tutor Request <ArrowRight size={17}/></a></Button></div></section>}
